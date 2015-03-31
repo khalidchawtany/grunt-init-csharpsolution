@@ -21,6 +21,7 @@ test: build
 		packages/NUnit.Runners/tools/nunit-console.exe \
 		**/bin/**/*Tests.dll \
 		-stoponerror \
+		-nologo \
 		-config=Debug
 
 clean:
