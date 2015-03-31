@@ -18,6 +18,7 @@ test: build
 	@mono \
 		--debug \
 		--runtime=v4.0 \
+		--optimize=-inline \
 		packages/NUnit.Runners/tools/nunit-console.exe \
 		**/bin/**/*Tests.dll \
 		-stoponerror \
