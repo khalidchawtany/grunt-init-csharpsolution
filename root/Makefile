@@ -1,12 +1,7 @@
-﻿all: restore clean test
-
-init: install test
+﻿all: clean test
 
 updatepaket:
 	@mono .paket/paket.bootstrapper.exe prerelease
-
-restore:
-	@mono .paket/paket.exe restore
 
 install: updatepaket
 	@mono .paket/paket.exe install
@@ -28,4 +23,4 @@ test: build
 clean:
 	@find . -type d \( -name "bin" -o -name "obj" \) | xargs rm -rf
 
-.PHONY: all init updatepaket restore install build test clean
+.PHONY: all updatepaket install build test clean
