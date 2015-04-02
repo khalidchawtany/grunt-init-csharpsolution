@@ -1,4 +1,4 @@
-﻿framework: net45
+framework: net45
 source https://nuget.org/api/v2
 
 nuget NUnit.Runners
