@@ -1,4 +1,9 @@
-nupkgOutputDir := ./
+nupkgOutputDir := ./publish
+branch := $(shell git rev-parse --abbrev-ref HEAD 2>/dev/null)
+ifdef branch
+nupkgOutputDir := $(nupkgOutputDir)/$(branch)
+endif
+
 all: clean test
 
 updatepaket:
