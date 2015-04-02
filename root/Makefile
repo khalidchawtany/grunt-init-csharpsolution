@@ -1,4 +1,5 @@
-﻿all: clean test
+nupkgOutputDir := ./
+all: clean test
 
 updatepaket:
 	@mono .paket/paket.bootstrapper.exe prerelease
@@ -23,4 +24,7 @@ test: build
 clean:
 	@find . -type d \( -name "bin" -o -name "obj" \) | xargs rm -rf
 
-.PHONY: all updatepaket install build test clean
+publish:
+	@mono .paket/paket.exe pack output "$(nupkgOutputDir)"
+
+.PHONY: all updatepaket install build test clean publish

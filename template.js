@@ -31,7 +31,9 @@ exports.template = function(grunt, init, done) {
 
   init.process({}, [
     // Prompt for these values.
-    init.prompt('name')
+    init.prompt('name'),
+    init.prompt('description'),
+    init.prompt('author_name')
   ], function(err, props) {
     props.keywords = [];
     props.projectGuid = generateUUID();
