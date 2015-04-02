@@ -25,6 +25,7 @@ clean:
 	@find . -type d \( -name "bin" -o -name "obj" \) | xargs rm -rf
 
 publish:
-	@mono .paket/paket.exe pack output "$(nupkgOutputDir)"
+	@mono .paket/paket.exe pack output "$(nupkgOutputDir)" \
+		&& echo "Published to $(nupkgOutputDir)"
 
 .PHONY: all updatepaket install build test clean publish
