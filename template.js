@@ -54,6 +54,13 @@ exports.template = function(grunt, init, done) {
 
     init.copyAndProcess(files, props, {noProcess: ".paket/**"});
 
+    var fs = require('fs');
+    Object.keys(files)
+      .filter(function(file) { return /\.exe$/.test(file); })
+      .forEach(function(exe) {
+        fs.chmodSync(exe, '0755');
+      });
+
     // All done!
     done();
   });
