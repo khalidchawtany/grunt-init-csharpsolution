@@ -1,5 +1,12 @@
 # grunt-init-csharpsolution
 
+
+
+Check the pakt branch.
+The whole stuff is explained in the following video:
+https://www.youtube.com/watch?v=X0vVVHGFotc
+
+
 > Quickly scaffold a C# 4.5 solution with [grunt-init][], including NUnit unit tests. Adapt to suit your own needs.
 
 ![screenshot](https://raw.githubusercontent.com/nosami/nosami.github.io/master/grunt-init-csharpsolution.gif)
