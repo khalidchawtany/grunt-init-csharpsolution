@@ -6,6 +6,14 @@ Check the pakt branch.
 The whole stuff is explained in the following video:
 https://www.youtube.com/watch?v=X0vVVHGFotc
 
+Steps to get project:
+
+1- check out pakt branch
+2- ```grunt-init csharp```
+3- ``` make install```
+4- ```make```
+
+Done :)
 
 > Quickly scaffold a C# 4.5 solution with [grunt-init][], including NUnit unit tests. Adapt to suit your own needs.
 
