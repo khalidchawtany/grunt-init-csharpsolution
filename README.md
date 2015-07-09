@@ -8,10 +8,10 @@ https://www.youtube.com/watch?v=X0vVVHGFotc
 
 Steps to get project:
 
-1- check out pakt branch
-2- ```grunt-init csharp```
-3- ``` make install```
-4- ```make```
+* check out pakt branch
+* ```grunt-init csharp```
+* ``` make install```
+* ```make```
 
 Done :)
 
